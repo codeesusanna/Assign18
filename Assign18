@@ -1,0 +1,10 @@
+first = 0
+second = 1
+fibonnaci_series = [0]
+for i in range(int(input())):
+  fibonnaci_series.append(second)
+  val = first
+  first = second
+  second = val + second
+  
+print(sum(fibonnaci_series))
